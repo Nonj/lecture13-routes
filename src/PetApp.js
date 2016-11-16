@@ -28,7 +28,7 @@ class PetApp extends React.Component {
               <GeneralLinks />
             </div>
             <div className="col-xs-9">
-              <DogList />
+              {this.props.children}
             </div>
           </div>
         </main>
@@ -120,4 +120,5 @@ class DogCard extends React.Component {
   }
 }
 
+export { DogList };
 export default PetApp;
