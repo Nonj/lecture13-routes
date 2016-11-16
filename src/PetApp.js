@@ -1,7 +1,7 @@
 import React from 'react';
 import _ from 'lodash';
 import SAMPLE_DOGS from './dog-data'; //load the dog data to use
-
+import {Link} from 'react-router'
 class PetApp extends React.Component {
   constructor(props){
     super(props);
@@ -46,9 +46,9 @@ class GeneralLinks extends React.Component {
       <nav>
         <h2>Navigation</h2>
         <ul className="list-unstyled">
-          <li><a>Adopt a Pet</a></li>
-          <li><a>About Us</a></li>
-          <li><a>Resources</a></li>
+          <li><Link to="/">Adopt a Pet</Link></li>
+          <li><Link to='/about'>About Us</Link></li>
+          <li><Link to='/resources'>Resources</Link></li>
         </ul>
       </nav>      
     );
