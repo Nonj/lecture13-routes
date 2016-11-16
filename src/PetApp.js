@@ -46,9 +46,9 @@ class GeneralLinks extends React.Component {
       <nav>
         <h2>Navigation</h2>
         <ul className="list-unstyled">
-          <li><Link to="/">Adopt a Pet</Link></li>
-          <li><Link to='/about'>About Us</Link></li>
-          <li><Link to='/resources'>Resources</Link></li>
+          <li><Link to="/list" activeClassName="activeLink">Adopt a Pet</Link></li>
+          <li><Link to='/about' activeClassName="activeLink">About Us</Link></li>
+          <li><Link to='/resources' activeClassName="activeLink">Resources</Link></li>
         </ul>
       </nav>      
     );
