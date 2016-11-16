@@ -17,6 +17,7 @@ ReactDOM.render(
       <Route path="/about" component={AboutPage} />
       <Route path="/resources" component={ResourcesPage} />
       <Route path="/information" component={ResourcesPage} />
+      <Route path="adopt/:dogName" component={AdoptPage} />
     </Route>
   </Router>
   ,
