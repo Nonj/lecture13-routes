@@ -1,7 +1,7 @@
 import React from 'react';
 import _ from 'lodash';
 import SAMPLE_DOGS from './dog-data'; //load the dog data to use
-import {Link} from 'react-router'
+import {Link, hashHistory} from 'react-router'
 class PetApp extends React.Component {
   constructor(props){
     super(props);
@@ -100,6 +100,7 @@ class DogCard extends React.Component {
 
   handleClick(){
     console.log("You want to adopt", this.props.mutt.name);
+    hashHistory.push('/adopt/' + this.props.mutt.name);
   }
 
   render() {
